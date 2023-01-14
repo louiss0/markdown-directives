@@ -24,7 +24,6 @@ Below is all of the directives that are supported by this plugin.
 | rmd-cd      | This is a container directive snippet |
 | rmd-ld      | This is a leaf directive snippet      |
 | rmd-td      | This is a text directive snippet      |
-|             |                                       |
 
 ## Requirements
 
