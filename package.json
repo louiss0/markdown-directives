@@ -1,0 +1,25 @@
+{
+  "name": "remark-html-directives-snippets",
+  "displayName": "Remark HTML Directives Snippets ",
+  "description": "It's set of snippets for markdown directives that come from Remark HTML Directives",
+  "publisher": "SheltonLouis",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "scripts": {
+    "release": "vsce package && vsce publish"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "markdown",
+        "path": "./snippets/snippets.code-snippets"
+
+      }
+    ]
+  }
+}

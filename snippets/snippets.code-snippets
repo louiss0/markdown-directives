@@ -1,0 +1,55 @@
+/* 
+
+"Template": {
+        "prefix": "",
+        "description": "",
+        "isFileTemplate": false,
+        "body": ""
+    },
+
+*/
+
+{
+
+    
+
+    "Container Directive": {
+        "prefix": "rmd-cd",
+        "description": "This is a container directive snippet",
+        "isFileTemplate": false,
+        "body": [
+
+            ":::${1:section}",
+                "",
+            "${2:section}",
+                "",
+            ":::"
+        ]
+    },
+    
+    "Leaf Directive": {
+        "prefix": "rmd-ld",
+        "description": "This is a leaf directive snippet",
+        "isFileTemplate": false,
+        "body": "::${1:button}[${2:button}]"
+    },
+    
+    
+    "Text Directive": {
+        "prefix": "rmd-td",
+        "description": "This is a text directive snippet",
+        "isFileTemplate": false,
+        "body": ":${1:a}[${2:button}]"
+    },
+
+
+    // "Template": {
+    //     "prefix": "",
+    //     "description": "",
+    //     "isFileTemplate": false,
+    //     "body": ""
+    // },
+
+
+
+}
