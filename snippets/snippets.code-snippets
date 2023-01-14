@@ -388,160 +388,142 @@
         "prefix": "rmd-ld",
         "description": "This is a leaf directive snippet",
         "isFileTemplate": false,
-        "body": "::${1:span}[${2:span}]"
+        "body": "::${1:span}"
     },
     
     "Break Rule Directive": {
         "prefix": "rmd-br",
         "description": "This is a Break Rule directive snippet",
         "isFileTemplate": false,
-        "body": [
+        "body": ":::${1:br}}",
+    },
 
-            ":::${1:br}",
-                "",
-            "${2:div}",
-                "",
-            ":::"
-        ]
+    "Image Directive": {
+        "prefix": "rmd-cd",
+        "description": "This is a Image directive snippet",
+        "isFileTemplate": false,
+        "body": "::${1:span}"
+    },
+
+
+    "Map Directive": {
+        "prefix": "rmd-map",
+        "description": "This is a map directive snippet",
+        "isFileTemplate": false,
+        "body": "::${1:map}",
+    },
+
+    "Image Frame Directive": {
+        "prefix": "rmd-if",
+        "description": "This is a iframe directive snippet",
+        "isFileTemplate": false,
+        "body": "::${1:iframe}",
     },
     
-    "Container Directive": {
-        "prefix": "rmd-cd",
-        "description": "This is a container directive snippet",
-        "isFileTemplate": false,
-        "body": [
-
-            ":::${1:div}",
-                "",
-            "${2:div}",
-                "",
-            ":::"
-        ]
-    },
-    "Container Directive": {
-        "prefix": "rmd-cd",
-        "description": "This is a container directive snippet",
-        "isFileTemplate": false,
-        "body": [
-
-            ":::${1:div}",
-                "",
-            "${2:div}",
-                "",
-            ":::"
-        ]
-    },
-    "Container Directive": {
-        "prefix": "rmd-cd",
-        "description": "This is a container directive snippet",
-        "isFileTemplate": false,
-        "body": [
-
-            ":::${1:div}",
-                "",
-            "${2:div}",
-                "",
-            ":::"
-        ]
-    },
-    "Container Directive": {
-        "prefix": "rmd-cd",
-        "description": "This is a container directive snippet",
-        "isFileTemplate": false,
-        "body": [
-
-            ":::${1:div}",
-                "",
-            "${2:div}",
-                "",
-            ":::"
-        ]
-    },
-    "Container Directive": {
-        "prefix": "rmd-cd",
-        "description": "This is a container directive snippet",
-        "isFileTemplate": false,
-        "body": [
-
-            ":::${1:div}",
-                "",
-            "${2:div}",
-                "",
-            ":::"
-        ]
-    },
-    "Container Directive": {
-        "prefix": "rmd-cd",
-        "description": "This is a container directive snippet",
-        "isFileTemplate": false,
-        "body": [
-
-            ":::${1:div}",
-                "",
-            "${2:div}",
-                "",
-            ":::"
-        ]
-    },
-    "Container Directive": {
-        "prefix": "rmd-cd",
-        "description": "This is a container directive snippet",
-        "isFileTemplate": false,
-        "body": [
-
-            ":::${1:div}",
-                "",
-            "${2:div}",
-                "",
-            ":::"
-        ]
-    },
     
-    "Container Directive": {
-        "prefix": "rmd-cd",
-        "description": "This is a container directive snippet",
-        "isFileTemplate": false,
-        "body": [
-
-            ":::${1:div}",
-                "",
-            "${2:div}",
-                "",
-            ":::"
-        ]
-    },
-    
-    "Container Directive": {
-        "prefix": "rmd-cd",
-        "description": "This is a container directive snippet",
-        "isFileTemplate": false,
-        "body": [
-
-            ":::${1:div}",
-                "",
-            "${2:div}",
-                "",
-            ":::"
-        ]
-    },
-
-
-      
     "Text Directive": {
         "prefix": "rmd-td",
         "description": "This is a text directive snippet",
         "isFileTemplate": false,
-        "body": ":${1:a}[${2:button}]"
+        "body": ":${1:a}[${2}]"
+    },
+    
+    
+    "Cite Directive": {
+        "prefix": "rmd-ct",
+        "description": "This is a cite directive snippet",
+        "isFileTemplate": false,
+        "body": ":${1:cite}[${2}]"
     },
 
 
-    // "Template": {
-    //     "prefix": "",
-    //     "description": "",
-    //     "isFileTemplate": false,
-    //     "body": ""
-    // },
+    "Code Directive": {
+        "prefix": "rmd-td",
+        "description": "This is a code directive snippet",
+        "isFileTemplate": false,
+        "body": ":${1:code}[${2}]"
+    },
+    
+    "Definition Directive": {
+        "prefix": "rmd-dfn",
+        "description": "This is a dfn directive snippet",
+        "isFileTemplate": false,
+        "body": ":${1:dfn}[${2}]"
+    },
+    
+    "Sub Directive": {
+        "prefix": "rmd-td",
+        "description": "This is a sub directive snippet",
+        "isFileTemplate": false,
+        "body": ":${1:sub}[${2}]"
+    },
+    
+    "Sup Directive": {
+        "prefix": "rmd-td",
+        "description": "This is a sup directive snippet",
+        "isFileTemplate": false,
+        "body": ":${1:sup}[${2}]"
+    },
+    
+    "Time Directive": {
+        "prefix": "rmd-td",
+        "description": "This is a time directive snippet",
+        "isFileTemplate": false,
+        "body": ":${1:time}[${2}]"
+    },
+    
+    "Var Directive": {
+        "prefix": "rmd-td",
+        "description": "This is a var directive snippet",
+        "isFileTemplate": false,
+        "body": ":${1:var}[${2}]"
+    },
+    
+    "Mark Directive": {
+        "prefix": "rmd-td",
+        "description": "This is a mark directive snippet",
+        "isFileTemplate": false,
+        "body": ":${1:mark}[${2}]"
+    },
+    
+    "Small Directive": {
+        "prefix": "rmd-td",
+        "description": "This is a small directive snippet",
+        "isFileTemplate": false,
+        "body": ":${1:small}[${2}]"
+    },
+    
+    
+    "Keyboard Directive": {
+        "prefix": "rmd-td",
+        "description": "This is a kbd directive snippet",
+        "isFileTemplate": false,
+        "body": ":${1:kbd}[${2}]"
+    },
+    
+    
+    "Samp Directive": {
+        "prefix": "rmd-td",
+        "description": "This is a samp directive snippet",
+        "isFileTemplate": false,
+        "body": ":${1:samp}[${2}]"
+    },
+    
+    "Text Directive": {
+        "prefix": "rmd-td",
+        "description": "This is a text directive snippet",
+        "isFileTemplate": false,
+        "body": ":${1:a}[${2}]"
+    },
+    "Text Directive": {
+        "prefix": "rmd-td",
+        "description": "This is a text directive snippet",
+        "isFileTemplate": false,
+        "body": ":${1:a}[${2}]"
+    },
 
+
+   
 
 
 }
