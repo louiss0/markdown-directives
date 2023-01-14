@@ -11,30 +11,522 @@
 
 {
 
-    
-
     "Container Directive": {
         "prefix": "rmd-cd",
         "description": "This is a container directive snippet",
         "isFileTemplate": false,
         "body": [
 
-            ":::${1:section}",
+            ":::${1:div}",
                 "",
-            "${2:section}",
+            "${2:div}",
+                "",
+            ":::"
+        ]
+    },
+    "Header Directive": {
+        "prefix": "rmd-hd",
+        "description": "This is a header directive snippet",
+        "isFileTemplate": false,
+        "body": [
+
+            ":::${1:header}",
+                "",
+            "${2:div}",
+                "",
+            ":::"
+        ]
+    },
+    "Main Directive": {
+        "prefix": "rmd-m",
+        "description": "This is a Main directive snippet",
+        "isFileTemplate": false,
+        "body": [
+
+            ":::${1:main}",
+                "",
+            "${2:div}",
+                "",
+            ":::"
+        ]
+    },
+    "Footer Directive": {
+        "prefix": "rmd-ft",
+        "description": "This is a Footer directive snippet",
+        "isFileTemplate": false,
+        "body": [
+
+            ":::${1:footer}",
+                "",
+            "${2:div}",
                 "",
             ":::"
         ]
     },
     
+    "Section Directive": {
+        "prefix": "rmd-st",
+        "description": "This is a Section directive snippet",                        
+        "isFileTemplate": false,
+        "body": [
+
+            ":::${1:section}",
+                "",
+            "${2:div}",
+                "",
+            ":::"
+        ]
+    },
+    "Figure Directive": {
+        "prefix": "rmd-f",
+        "description": "This is a Figure directive snippet",
+        "isFileTemplate": false,
+        "body": [
+
+            ":::${1:figure}",
+                "",
+            "${2:div}",
+                "",
+            ":::"
+        ]
+    },
+
+    "Address Directive": {
+        "prefix": "rmd-ad",
+        "description": "This is a Address directive snippet",
+        "isFileTemplate": false,
+        "body": [
+
+            ":::${1:address}",
+                "",
+            "${2:div}",
+                "",
+            ":::"
+        ]
+    },
+    "Aside Directive": {
+        "prefix": "rmd-as",
+        "description": "This is a aside directive snippet",
+        "isFileTemplate": false,
+        "body": [
+
+            ":::${1:aside}",
+                "",
+            "${2:div}",
+                "",
+            ":::"
+        ]
+    },
+    "Blockquote Directive": {
+        "prefix": "rmd-bq",
+        "description": "This is a blockquote directive snippet",
+        "isFileTemplate": false,
+        "body": [
+
+            ":::${1:blockquote}",
+                "",
+            "${2:div}",
+                "",
+            ":::"
+        ]
+    },
+    "Details Directive": {
+        "prefix": "rmd-dts",
+        "description": "This is a details directive snippet",
+        "isFileTemplate": false,
+        "body": [
+
+            ":::${1:details}",
+                "",
+            "${2:div}",
+                "",
+            ":::"
+        ]
+    },
+    "Summary Directive": {
+        "prefix": "rmd-smr",
+        "description": "This is a summary directive snippet",
+        "isFileTemplate": false,
+        "body": [
+
+            ":::${1:summary}",
+                "",
+            "${2:div}",
+                "",
+            ":::"
+        ]
+    },
+    "Definition List Directive": {
+        "prefix": "rmd-dfl",
+        "description": "This is a dl directive snippet",
+        "isFileTemplate": false,
+        "body": [
+
+            ":::${1:dl}",
+                "",
+            "${2:div}",
+                "",
+            ":::"
+        ]
+    },
+    "Figcaption Directive": {
+        "prefix": "rmd-fc",
+        "description": "This is a figcaption directive snippet",
+        "isFileTemplate": false,
+        "body": [
+
+            ":::${1:figcaption}",
+                "",
+            "${2:div}",
+                "",
+            ":::"
+        ]
+    },
+    
+    
+    "Horizontal Rule Directive": {
+        "prefix": "rmd-hr",
+        "description": "This is a hr directive snippet",
+        "isFileTemplate": false,
+        "body": [
+
+            ":::${1:hr}",
+                "",
+            "${2:div}",
+                "",
+            ":::"
+        ]
+    },
+    
+    "List Item Directive": {
+        "prefix": "rmd-li",
+        "description": "This is a li directive snippet",
+        "isFileTemplate": false,
+        "body": [
+
+            ":::${1:li}",
+                "",
+            "${2:div}",
+                "",
+            ":::"
+        ]
+    },
+    
+    "Navigation Links Directive": {
+        "prefix": "rmd-n",
+        "description": "This is a nav directive snippet",
+        "isFileTemplate": false,
+        "body": [
+
+            ":::${1:nav}",
+                "",
+            "${2:div}",
+                "",
+            ":::"
+        ]
+    },
+
+    "Ordered List Directive": {
+        "prefix": "rmd-ol",
+        "description": "This is a Ordered List directive snippet",
+        "isFileTemplate": false,
+        "body": [
+
+            ":::${1:ol}",
+                "",
+            "${2:div}",
+                "",
+            ":::"
+        ]
+    },
+    "Unordered List Directive": {
+        "prefix": "rmd-ul",
+        "description": "This is a Unordered List directive snippet",
+        "isFileTemplate": false,
+        "body": [
+
+            ":::${1:ul}",
+                "",
+            "${2:div}",
+                "",
+            ":::"
+        ]
+    },
+    "Video Directive": {
+        "prefix": "rmd-v",
+        "description": "This is a video directive snippet",
+        "isFileTemplate": false,
+        "body": [
+
+            ":::${1:video}",
+                "",
+            "${2:div}",
+                "",
+            ":::"
+        ]
+    },
+
+
+    "Audio Directive": {
+        "prefix": "rmd-a",
+        "description": "This is a audio directive snippet",
+        "isFileTemplate": false,
+        "body": [
+
+            ":::${1:audio}",
+                "",
+            "${2:div}",
+                "",
+            ":::"
+        ]
+    },
+
+
+    "Heading Group Directive": {
+        "prefix": "rmd-hg",
+        "description": "This is a hgroup directive snippet",
+        "isFileTemplate": false,
+        "body": [
+
+            ":::${1:hgroup}",
+                "",
+            "${2:div}",
+                "",
+            ":::"
+        ]
+    },
+
+
+
+    "Table Directive": {
+        "prefix": "rmd-tb",
+        "description": "This is a table directive snippet",
+        "isFileTemplate": false,
+        "body": [
+
+            ":::${1:table}",
+                "",
+            "${2:div}",
+                "",
+            ":::"
+        ]
+    },
+    
+    "Table Foot Directive": {
+        "prefix": "rmd-tf",
+        "description": "This is a tfoot directive snippet",
+        "isFileTemplate": false,
+        "body": [
+
+            ":::${1:tfoot}",
+                "",
+            "${2:div}",
+                "",
+            ":::"
+        ]
+    },
+    
+    "Table Head Directive": {
+        "prefix": "rmd-cd",
+        "description": "This is a thead directive snippet",
+        "isFileTemplate": false,
+        "body": [
+
+            ":::${1:div}",
+                "",
+            "${2:div}",
+                "",
+            ":::"
+        ]
+    },
+    
+    "Column Directive": {
+        "prefix": "rmd-c",
+        "description": "This is a col directive snippet",
+        "isFileTemplate": false,
+        "body": [
+
+            ":::${1:col}",
+                "",
+            "${2:div}",
+                "",
+            ":::"
+        ]
+    },
+    
+    "Caption Directive": {
+        "prefix": "rmd-ct",
+        "description": "This is a caption directive snippet",
+        "isFileTemplate": false,
+        "body": [
+
+            ":::${1:caption}",
+                "",
+            "${2:div}",
+                "",
+            ":::"
+        ]
+    },
+    
+    "Colgroup Directive": {
+        "prefix": "rmd-cg",
+        "description": "This is a colgroup directive snippet",
+        "isFileTemplate": false,
+        "body": [
+
+            ":::${1:colgroup}",
+                "",
+            "${2:div}",
+                "",
+            ":::"
+        ]
+    },
+    
+
+
     "Leaf Directive": {
         "prefix": "rmd-ld",
         "description": "This is a leaf directive snippet",
         "isFileTemplate": false,
-        "body": "::${1:button}[${2:button}]"
+        "body": "::${1:span}[${2:span}]"
     },
     
+    "Break Rule Directive": {
+        "prefix": "rmd-br",
+        "description": "This is a Break Rule directive snippet",
+        "isFileTemplate": false,
+        "body": [
+
+            ":::${1:br}",
+                "",
+            "${2:div}",
+                "",
+            ":::"
+        ]
+    },
     
+    "Container Directive": {
+        "prefix": "rmd-cd",
+        "description": "This is a container directive snippet",
+        "isFileTemplate": false,
+        "body": [
+
+            ":::${1:div}",
+                "",
+            "${2:div}",
+                "",
+            ":::"
+        ]
+    },
+    "Container Directive": {
+        "prefix": "rmd-cd",
+        "description": "This is a container directive snippet",
+        "isFileTemplate": false,
+        "body": [
+
+            ":::${1:div}",
+                "",
+            "${2:div}",
+                "",
+            ":::"
+        ]
+    },
+    "Container Directive": {
+        "prefix": "rmd-cd",
+        "description": "This is a container directive snippet",
+        "isFileTemplate": false,
+        "body": [
+
+            ":::${1:div}",
+                "",
+            "${2:div}",
+                "",
+            ":::"
+        ]
+    },
+    "Container Directive": {
+        "prefix": "rmd-cd",
+        "description": "This is a container directive snippet",
+        "isFileTemplate": false,
+        "body": [
+
+            ":::${1:div}",
+                "",
+            "${2:div}",
+                "",
+            ":::"
+        ]
+    },
+    "Container Directive": {
+        "prefix": "rmd-cd",
+        "description": "This is a container directive snippet",
+        "isFileTemplate": false,
+        "body": [
+
+            ":::${1:div}",
+                "",
+            "${2:div}",
+                "",
+            ":::"
+        ]
+    },
+    "Container Directive": {
+        "prefix": "rmd-cd",
+        "description": "This is a container directive snippet",
+        "isFileTemplate": false,
+        "body": [
+
+            ":::${1:div}",
+                "",
+            "${2:div}",
+                "",
+            ":::"
+        ]
+    },
+    "Container Directive": {
+        "prefix": "rmd-cd",
+        "description": "This is a container directive snippet",
+        "isFileTemplate": false,
+        "body": [
+
+            ":::${1:div}",
+                "",
+            "${2:div}",
+                "",
+            ":::"
+        ]
+    },
+    
+    "Container Directive": {
+        "prefix": "rmd-cd",
+        "description": "This is a container directive snippet",
+        "isFileTemplate": false,
+        "body": [
+
+            ":::${1:div}",
+                "",
+            "${2:div}",
+                "",
+            ":::"
+        ]
+    },
+    
+    "Container Directive": {
+        "prefix": "rmd-cd",
+        "description": "This is a container directive snippet",
+        "isFileTemplate": false,
+        "body": [
+
+            ":::${1:div}",
+                "",
+            "${2:div}",
+                "",
+            ":::"
+        ]
+    },
+
+
+      
     "Text Directive": {
         "prefix": "rmd-td",
         "description": "This is a text directive snippet",

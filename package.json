@@ -11,6 +11,7 @@
     "type": "git",
     "url": "https://github.com/louiss0/remark-html-directives-snippets"
   },
+  "icon": "/images/remark-markdown-directive.jpg",
   "scripts": {
     "release": "vsce package && vsce publish"
   },
