@@ -438,7 +438,7 @@
 
 
     "Code Directive": {
-        "prefix": "rmd-td",
+        "prefix": "rmd-cd",
         "description": "This is a code directive snippet",
         "isFileTemplate": false,
         "body": ":${1:code}[${2}]"
@@ -452,42 +452,42 @@
     },
     
     "Sub Directive": {
-        "prefix": "rmd-td",
+        "prefix": "rmd-sb",
         "description": "This is a sub directive snippet",
         "isFileTemplate": false,
         "body": ":${1:sub}[${2}]"
     },
     
     "Sup Directive": {
-        "prefix": "rmd-td",
+        "prefix": "rmd-sp",
         "description": "This is a sup directive snippet",
         "isFileTemplate": false,
         "body": ":${1:sup}[${2}]"
     },
     
     "Time Directive": {
-        "prefix": "rmd-td",
+        "prefix": "rmd-tm",
         "description": "This is a time directive snippet",
         "isFileTemplate": false,
         "body": ":${1:time}[${2}]"
     },
     
     "Var Directive": {
-        "prefix": "rmd-td",
+        "prefix": "rmd-v",
         "description": "This is a var directive snippet",
         "isFileTemplate": false,
         "body": ":${1:var}[${2}]"
     },
     
     "Mark Directive": {
-        "prefix": "rmd-td",
+        "prefix": "rmd-mk",
         "description": "This is a mark directive snippet",
         "isFileTemplate": false,
         "body": ":${1:mark}[${2}]"
     },
     
     "Small Directive": {
-        "prefix": "rmd-td",
+        "prefix": "rmd-sml",
         "description": "This is a small directive snippet",
         "isFileTemplate": false,
         "body": ":${1:small}[${2}]"
@@ -495,7 +495,7 @@
     
     
     "Keyboard Directive": {
-        "prefix": "rmd-td",
+        "prefix": "rmd-kbd",
         "description": "This is a kbd directive snippet",
         "isFileTemplate": false,
         "body": ":${1:kbd}[${2}]"
@@ -503,27 +503,90 @@
     
     
     "Samp Directive": {
-        "prefix": "rmd-td",
+        "prefix": "rmd-smp",
         "description": "This is a samp directive snippet",
         "isFileTemplate": false,
         "body": ":${1:samp}[${2}]"
     },
     
-    "Text Directive": {
-        "prefix": "rmd-td",
+    "Abbreviation Directive": {
+        "prefix": "rmd-abbr",
+        "description": "This is a Abbreviation directive snippet",
+        "isFileTemplate": false,
+        "body": ":${1:abbr}[${2}]"
+    },
+    
+    "Bi-Directional Override Directive": {
+        "prefix": "rmd-bdo",
         "description": "This is a text directive snippet",
         "isFileTemplate": false,
-        "body": ":${1:a}[${2}]"
+        "body": ":${1:bdo}[${2}]"
     },
-    "Text Directive": {
-        "prefix": "rmd-td",
+    
+    "Data Directive": {
+        "prefix": "rmd-data",
         "description": "This is a text directive snippet",
         "isFileTemplate": false,
-        "body": ":${1:a}[${2}]"
+        "body": ":${1:data}[${2}]"
+    },
+    
+    "Definition Term Directive": {
+        "prefix": "rmd-dt",
+        "description": "This is a Definition Term directive snippet",
+        "isFileTemplate": false,
+        "body": ":${1:dt}[${2}]"
+    },
+    
+    "Definition Description Directive": {
+        "prefix": "rmd-dt",
+        "description": "This is a Definition Description directive snippet",
+        "isFileTemplate": false,
+        "body": ":${1:dt}[${2}]"
+    },
+    
+    "Heading One Directive": {
+        "prefix": "rmd-h1",
+        "description": "This is a Heading One directive snippet",
+        "isFileTemplate": false,
+        "body": ":${1:h1}[${2}]"
+    },
+    
+    "Heading Two Directive": {
+        "prefix": "rmd-h2",
+        "description": "This is a Heading Two directive snippet",
+        "isFileTemplate": false,
+        "body": ":${1:h2}[${2}]"
     },
 
+    "Heading Three Directive": {
+        "prefix": "rmd-h3",
+        "description": "This is a Heading Three directive snippet",
+        "isFileTemplate": false,
+        "body": ":${1:h3}[${2}]"
+    },
 
-   
+    "Heading Four Directive": {
+        "prefix": "rmd-h4",
+        "description": "This is a Heading Four directive snippet",
+        "isFileTemplate": false,
+        "body": ":${1:h4}[${2}]"
+    },
+
+    "Heading Five Directive": {
+        "prefix": "rmd-h5",
+        "description": "This is a Heading Five directive snippet",
+        "isFileTemplate": false,
+        "body": ":${1:h5}[${2}]"
+    },
+
+    "Heading Six Directive": {
+        "prefix": "rmd-h6",
+        "description": "This is a Heading Six directive snippet",
+        "isFileTemplate": false,
+        "body": ":${1:h6}[${2}]"
+    },
+    
+
 
 
 }
