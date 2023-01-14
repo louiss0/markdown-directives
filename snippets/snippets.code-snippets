@@ -15,11 +15,12 @@
         "prefix": "rmd-cd",
         "description": "This is a container directive snippet",
         "isFileTemplate": false,
+        "scope": "markdown,mdx",
         "body": [
 
             ":::${1:div}",
                 "",
-            "${2:div}",
+            "${2}",
                 "",
             ":::"
         ]
@@ -32,7 +33,7 @@
 
             ":::${1:header}",
                 "",
-            "${2:div}",
+            "${2}",
                 "",
             ":::"
         ]
@@ -45,7 +46,7 @@
 
             ":::${1:main}",
                 "",
-            "${2:div}",
+            "${2}",
                 "",
             ":::"
         ]
@@ -58,7 +59,7 @@
 
             ":::${1:footer}",
                 "",
-            "${2:div}",
+            "${2}",
                 "",
             ":::"
         ]
@@ -72,34 +73,34 @@
 
             ":::${1:section}",
                 "",
-            "${2:div}",
+            "${2}",
                 "",
             ":::"
         ]
     },
     "Figure Directive": {
-        "prefix": "rmd-f",
+        "prefix": "rmd-fg",
         "description": "This is a Figure directive snippet",
         "isFileTemplate": false,
         "body": [
 
             ":::${1:figure}",
                 "",
-            "${2:div}",
+            "${2}",
                 "",
             ":::"
         ]
     },
 
     "Address Directive": {
-        "prefix": "rmd-ad",
+        "prefix": "rmd-adr",
         "description": "This is a Address directive snippet",
         "isFileTemplate": false,
         "body": [
 
             ":::${1:address}",
                 "",
-            "${2:div}",
+            "${2}",
                 "",
             ":::"
         ]
@@ -112,7 +113,7 @@
 
             ":::${1:aside}",
                 "",
-            "${2:div}",
+            "${2}",
                 "",
             ":::"
         ]
@@ -125,7 +126,7 @@
 
             ":::${1:blockquote}",
                 "",
-            "${2:div}",
+            "${2}",
                 "",
             ":::"
         ]
@@ -138,7 +139,7 @@
 
             ":::${1:details}",
                 "",
-            "${2:div}",
+            "${2}",
                 "",
             ":::"
         ]
@@ -151,20 +152,20 @@
 
             ":::${1:summary}",
                 "",
-            "${2:div}",
+            "${2}",
                 "",
             ":::"
         ]
     },
     "Definition List Directive": {
         "prefix": "rmd-dfl",
-        "description": "This is a dl directive snippet",
+        "description": "This is a definition list directive snippet",
         "isFileTemplate": false,
         "body": [
 
             ":::${1:dl}",
                 "",
-            "${2:div}",
+            "${2}",
                 "",
             ":::"
         ]
@@ -177,7 +178,7 @@
 
             ":::${1:figcaption}",
                 "",
-            "${2:div}",
+            "${2}",
                 "",
             ":::"
         ]
@@ -186,13 +187,13 @@
     
     "Horizontal Rule Directive": {
         "prefix": "rmd-hr",
-        "description": "This is a hr directive snippet",
+        "description": "This is a horizontal rule directive snippet",
         "isFileTemplate": false,
         "body": [
 
             ":::${1:hr}",
                 "",
-            "${2:div}",
+            "${2}",
                 "",
             ":::"
         ]
@@ -200,27 +201,27 @@
     
     "List Item Directive": {
         "prefix": "rmd-li",
-        "description": "This is a li directive snippet",
+        "description": "This is a list item directive snippet",
         "isFileTemplate": false,
         "body": [
 
             ":::${1:li}",
                 "",
-            "${2:div}",
+            "${2}",
                 "",
             ":::"
         ]
     },
     
     "Navigation Links Directive": {
-        "prefix": "rmd-n",
-        "description": "This is a nav directive snippet",
+        "prefix": "rmd-nav",
+        "description": "This is a navigation list directive snippet",
         "isFileTemplate": false,
         "body": [
 
             ":::${1:nav}",
                 "",
-            "${2:div}",
+            "${2}",
                 "",
             ":::"
         ]
@@ -234,7 +235,7 @@
 
             ":::${1:ol}",
                 "",
-            "${2:div}",
+            "${2}",
                 "",
             ":::"
         ]
@@ -247,20 +248,23 @@
 
             ":::${1:ul}",
                 "",
-            "${2:div}",
+            "${2}",
                 "",
             ":::"
         ]
     },
+    
+    
+    
     "Video Directive": {
-        "prefix": "rmd-v",
+        "prefix": "rmd-vd",
         "description": "This is a video directive snippet",
         "isFileTemplate": false,
         "body": [
 
             ":::${1:video}",
                 "",
-            "${2:div}",
+            "${2:source}",
                 "",
             ":::"
         ]
@@ -268,14 +272,14 @@
 
 
     "Audio Directive": {
-        "prefix": "rmd-a",
+        "prefix": "rmd-ad",
         "description": "This is a audio directive snippet",
         "isFileTemplate": false,
         "body": [
 
             ":::${1:audio}",
                 "",
-            "${2:div}",
+            "${2}",
                 "",
             ":::"
         ]
@@ -290,7 +294,9 @@
 
             ":::${1:hgroup}",
                 "",
-            "${2:div}",
+            "${2:h1}",
+            
+            "${3:p}",
                 "",
             ":::"
         ]
@@ -300,55 +306,115 @@
 
     "Table Directive": {
         "prefix": "rmd-tb",
-        "description": "This is a table directive snippet",
+        "description": "This is a table  directive snippet",
         "isFileTemplate": false,
         "body": [
 
             ":::${1:table}",
                 "",
-            "${2:div}",
+            "${2}",
                 "",
             ":::"
         ]
     },
+
+
     
     "Table Foot Directive": {
-        "prefix": "rmd-tf",
-        "description": "This is a tfoot directive snippet",
+        "prefix": "rmd-tbf",
+        "description": "This is a table foot directive snippet",
         "isFileTemplate": false,
         "body": [
 
             ":::${1:tfoot}",
                 "",
-            "${2:div}",
+            "${2}",
+                "",
+            ":::"
+        ]
+    },
+    
+
+
+
+    "Table Body Directive": {
+        "prefix": "rmd-tbbd",
+        "description": "This is a table body directive snippet",
+        "isFileTemplate": false,
+        "body": [
+
+            ":::${1:tbody}",
+                "",
+            "${2}",
                 "",
             ":::"
         ]
     },
     
     "Table Head Directive": {
-        "prefix": "rmd-cd",
-        "description": "This is a thead directive snippet",
+        "prefix": "rmd-tbh",
+        "description": "This is a table head directive snippet",
         "isFileTemplate": false,
         "body": [
 
-            ":::${1:div}",
+            ":::${1:thead}",
                 "",
-            "${2:div}",
+            "${2}",
+                "",
+            ":::"
+        ]
+    },
+    
+    "Table Header Directive": {
+        "prefix": "rmd-tbhd",
+        "description": "This is a table header directive snippet",
+        "isFileTemplate": false,
+        "body": [
+
+            ":::${1:th}",
+                "",
+            "${2}",
+                "",
+            ":::"
+        ]
+    },
+    "Table Row Directive": {
+        "prefix": "rmd-tr",
+        "description": "This is a table row directive snippet",
+        "isFileTemplate": false,
+        "body": [
+
+            ":::${1:tr}",
+                "",
+            "${2}",
+                "",
+            ":::"
+        ]
+    },
+
+    "Table Data Cell Directive": {
+        "prefix": "rmd-tbdc",
+        "description": "This is a table data cell directive snippet",
+        "isFileTemplate": false,
+        "body": [
+
+            ":::${1:td}",
+                "",
+            "${2}",
                 "",
             ":::"
         ]
     },
     
     "Column Directive": {
-        "prefix": "rmd-c",
-        "description": "This is a col directive snippet",
+        "prefix": "rmd-cl",
+        "description": "This is a column directive snippet",
         "isFileTemplate": false,
         "body": [
 
             ":::${1:col}",
                 "",
-            "${2:div}",
+            "${2}",
                 "",
             ":::"
         ]
@@ -362,7 +428,7 @@
 
             ":::${1:caption}",
                 "",
-            "${2:div}",
+            "${2}",
                 "",
             ":::"
         ]
@@ -376,7 +442,7 @@
 
             ":::${1:colgroup}",
                 "",
-            "${2:div}",
+            "${2}",
                 "",
             ":::"
         ]
@@ -395,11 +461,11 @@
         "prefix": "rmd-br",
         "description": "This is a Break Rule directive snippet",
         "isFileTemplate": false,
-        "body": ":::${1:br}}",
+        "body": "::${1:br}",
     },
 
     "Image Directive": {
-        "prefix": "rmd-cd",
+        "prefix": "rmd-img",
         "description": "This is a Image directive snippet",
         "isFileTemplate": false,
         "body": "::${1:span}"
@@ -438,7 +504,7 @@
 
 
     "Code Directive": {
-        "prefix": "rmd-cd",
+        "prefix": "rmd-cde",
         "description": "This is a code directive snippet",
         "isFileTemplate": false,
         "body": ":${1:code}[${2}]"
@@ -446,21 +512,21 @@
     
     "Definition Directive": {
         "prefix": "rmd-dfn",
-        "description": "This is a dfn directive snippet",
+        "description": "This is a Definition directive snippet",
         "isFileTemplate": false,
         "body": ":${1:dfn}[${2}]"
     },
     
     "Sub Directive": {
         "prefix": "rmd-sb",
-        "description": "This is a sub directive snippet",
+        "description": "This is a subscript directive snippet",
         "isFileTemplate": false,
         "body": ":${1:sub}[${2}]"
     },
     
     "Sup Directive": {
         "prefix": "rmd-sp",
-        "description": "This is a sup directive snippet",
+        "description": "This is a superscript directive snippet",
         "isFileTemplate": false,
         "body": ":${1:sup}[${2}]"
     },
@@ -496,7 +562,7 @@
     
     "Keyboard Directive": {
         "prefix": "rmd-kbd",
-        "description": "This is a kbd directive snippet",
+        "description": "This is a keyboard directive snippet",
         "isFileTemplate": false,
         "body": ":${1:kbd}[${2}]"
     },
@@ -504,7 +570,7 @@
     
     "Samp Directive": {
         "prefix": "rmd-smp",
-        "description": "This is a samp directive snippet",
+        "description": "This is a sample output directive snippet",
         "isFileTemplate": false,
         "body": ":${1:samp}[${2}]"
     },
@@ -518,14 +584,14 @@
     
     "Bi-Directional Override Directive": {
         "prefix": "rmd-bdo",
-        "description": "This is a text directive snippet",
+        "description": "This is a Bi-Directional Override directive snippet",
         "isFileTemplate": false,
         "body": ":${1:bdo}[${2}]"
     },
     
     "Data Directive": {
         "prefix": "rmd-data",
-        "description": "This is a text directive snippet",
+        "description": "This is a data  directive snippet",
         "isFileTemplate": false,
         "body": ":${1:data}[${2}]"
     },
@@ -538,55 +604,11 @@
     },
     
     "Definition Description Directive": {
-        "prefix": "rmd-dt",
+        "prefix": "rmd-dd",
         "description": "This is a Definition Description directive snippet",
         "isFileTemplate": false,
         "body": ":${1:dt}[${2}]"
     },
     
-    "Heading One Directive": {
-        "prefix": "rmd-h1",
-        "description": "This is a Heading One directive snippet",
-        "isFileTemplate": false,
-        "body": ":${1:h1}[${2}]"
-    },
     
-    "Heading Two Directive": {
-        "prefix": "rmd-h2",
-        "description": "This is a Heading Two directive snippet",
-        "isFileTemplate": false,
-        "body": ":${1:h2}[${2}]"
-    },
-
-    "Heading Three Directive": {
-        "prefix": "rmd-h3",
-        "description": "This is a Heading Three directive snippet",
-        "isFileTemplate": false,
-        "body": ":${1:h3}[${2}]"
-    },
-
-    "Heading Four Directive": {
-        "prefix": "rmd-h4",
-        "description": "This is a Heading Four directive snippet",
-        "isFileTemplate": false,
-        "body": ":${1:h4}[${2}]"
-    },
-
-    "Heading Five Directive": {
-        "prefix": "rmd-h5",
-        "description": "This is a Heading Five directive snippet",
-        "isFileTemplate": false,
-        "body": ":${1:h5}[${2}]"
-    },
-
-    "Heading Six Directive": {
-        "prefix": "rmd-h6",
-        "description": "This is a Heading Six directive snippet",
-        "isFileTemplate": false,
-        "body": ":${1:h6}[${2}]"
-    },
-    
-
-
-
 }

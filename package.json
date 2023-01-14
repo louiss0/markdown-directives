@@ -3,7 +3,7 @@
   "displayName": "Remark HTML Directives Snippets ",
   "description": "It's set of snippets for markdown directives that come from Remark HTML Directives",
   "publisher": "SheltonLouis",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "engines": {
     "vscode": "^1.74.0"
   },
@@ -22,6 +22,10 @@
     "snippets": [
       {
         "language": "markdown",
+        "path": "./snippets/snippets.code-snippets"
+      },
+      {
+        "language": "mdx",
         "path": "./snippets/snippets.code-snippets"
       }
     ]

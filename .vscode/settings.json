@@ -14,5 +14,10 @@
     "statusBarItem.remoteForeground": "#15202b",
     "tab.activeBorder": "#88d7ea"
   },
-  "peacock.color": "#5dc9e2"
+  "peacock.color": "#5dc9e2",
+  "cSpell.words": [
+    "tbbd",
+    "tbdc",
+    "tbhd"
+  ]
 }

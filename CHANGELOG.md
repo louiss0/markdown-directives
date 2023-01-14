@@ -1,9 +1,19 @@
 # Change Log
 
-All notable changes to the "marddown" extension will be documented in this file.
-
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
-
-## [Unreleased]
+## [0.0.0]
 
 - Initial release
+
+## [1.0.0]
+
+### Added
+
+- Directives for most semantic tags
+
+- Directives for most inline tags
+
+- Directives for most block tags
+
+### Changed
+
+- Reformatted the order of directives.
